@@ -1,0 +1,10 @@
+document.getElementById("liveAlertrBtn").addEventListener('click', function() {
+    let x = document.getElementById("fname");
+    let y = document.getElementById("locateresponse");
+    if(['90275','90274','90717','90710','90505','90277','90503','90501','90502','90504','90278','90247','90248','90249','90260','90278'].indexOf(x.value) >= 0) {
+      y.innerHTML = "We deliver to your area!"
+    }
+    else {
+      y.innerHTML = "We currently do NOT deliver to your area. Sorry!"
+    }
+  })
