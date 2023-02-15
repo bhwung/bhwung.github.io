@@ -8,7 +8,7 @@
         <link href="styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/63bbed94a6.js" crossorigin="anonymous"></script>
         <title>
-            Rock'n R'Olive
+            Rock'n R'Olive: {% block title %}{% endblock %}
         </title>
     </head>
     <body>
@@ -46,6 +46,8 @@
           </div>
         </div>
       </nav>
-          
+      <main>
+        {% block main %}{% endblock %}
+      </main>    
     </body>
 </html>
