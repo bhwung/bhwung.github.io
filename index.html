@@ -46,21 +46,10 @@
               </div>
             </div>
           </nav>
-          <!--zipcode checker-->
-          <p></p>
-          <label for="fname">Enter your zipcode:</label>
-          <input id="fname" name="fname" type="text">
-          <button id="checker">Click to check if we ship to your location</button>
-          <p id="locateresponse"></p>
-          <!--image-->
-          <div class="polaroid content">
-            <img src="arbequina jazz.jpg" alt="picture of korean kimbap">
-            <div class="container content">
-            <p>arbequina</p>
-            </div>
-          </div>
+               
+          
           <!--menu table-->
-          <a href="https://forms.gle/neDL8W5H6DYAEAeH6">Click here for order form</a>
+          <a href="https://forms.gle/TLyZS5dSz9DQxBg38">Click here for order form</a>
           <div class="content">
           <h2>Products</h2>
           <table id="menu" class="table table-hover">
@@ -83,16 +72,7 @@
           </table>
           </div>
       <script>
-            document.querySelector('#checker').addEventListener('click', function() {
-              let x = document.getElementById("fname");
-              let y = document.getElementById("locateresponse");
-              if(['90275','90274','90717','90710','90505','90277','90503','90501','90502','90504','90278','90247','90248','90249','90260','90278'].indexOf(x.value) >= 0) {
-                y.innerHTML = "We deliver to your area!"
-              }
-              else {
-                y.innerHTML = "We currently do NOT deliver to your area. Sorry!"
-              }
-            })
+           
       </script>
     </body>
 </html>
