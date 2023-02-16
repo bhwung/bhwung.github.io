@@ -1,3 +1,5 @@
+{% extends "template.html" %}
+
 {% block title %}
 About us
 {% endblock %}
@@ -7,12 +9,12 @@ About us
 {% block main %}
         <h1 class="content">Learn more about us and how Rock'n R'Olive started</h1>
         <div class="polaroid content">
-            <img src="Olive oil.jpg" alt="picture of olive oil" style="height:50%">
+            <img src="{{url_for('static', filename='Olive oil.jpg')}}" alt="picture of olive oil" style="height:50%">
             <div class="container content">
             <p>Olive oil</p>
             </div>
           </div>
-        <a href="index.html">
+        <a href="{{url_for('index')}}">
             <button>Return to main page</button>
         </a>
 {% endblock %}

@@ -1,3 +1,5 @@
+{% extends "template.html" %}
+
 {% block title %}
 Socials and Contact
 {% endblock %}
@@ -5,7 +7,7 @@ Socials and Contact
 {% block main %}
         <h1 class="content">Contact us!</h1>
         <div class="polaroid content">
-            <img src="Olive oil.jpg" alt="picture of olive oil" style="height:50%">
+            <img src="{{url_for('static', filename='Olive oil.jpg')}}" alt="picture of olive oil" style="height:50%">
             <div class="container content">
             <p>Picual Blues</p>
             </div>
@@ -18,7 +20,7 @@ Socials and Contact
             <label for="exampleFormControlTextarea1" class="form-label content">Please let us know your concerns:</label>
             <textarea class="form-control content" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-        <a href="index.html">
+        <a href="{{url_for('index')}}">
             <button>Return to main page</button>
         </a>
 {% endblock %}

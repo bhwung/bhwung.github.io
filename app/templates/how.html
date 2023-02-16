@@ -1,3 +1,5 @@
+{% extends "template.html" %}
+
 {% block title %}
 How does it work?
 {% endblock %}
@@ -5,12 +7,12 @@ How does it work?
 {% block main %}
         <h1 class="content">This is how it works.</h1>
         <div class="polaroid content">
-            <img src="Olive oil.jpg" alt="picture of olive oil" style="height:50%">
+            <img src="{{url_for('static', filename='Olive oil.jpg')}}" alt="picture of olive oil" style="height:50%">
             <div class="container content">
             <p>Olive oil</p>
             </div>
           </div>
-        <a href="index.html">
+        <a href="{{url_for('index')}}">
             <button>Return to main page</button>
         </a>
 {% endblock %}

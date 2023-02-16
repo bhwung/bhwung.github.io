@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -11,8 +11,28 @@ def index():
 
 @app.route("/about", methods=["GET", "POST"])
 def about():
+    if request.method == "POST":
+        ...
+        return redirect("/")
     return render_template("about.html")
 
 @app.route("/menu", methods=["GET", "POST"])
 def menu():
+    if request.method == "POST":
+        ...
+        return redirect("/")
     return render_template("menu.html")
+
+@app.route("/how", methods=["GET", "POST"])
+def how():
+    if request.method == "POST":
+        ...
+        return redirect("/")
+    return render_template("how.html")
+
+@app.route("/social", methods=["GET", "POST"])
+def social():
+    if request.method == "POST":
+        ...
+        return redirect("/")
+    return render_template("social.html")

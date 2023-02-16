@@ -14,7 +14,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{{url_for('index')}}">
             <i class="fa-solid fa-bottle-droplet align-text-top"></i>
             Welcome to Rock'n R'Olive
           </a>
@@ -24,13 +24,13 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ url_for('templates',filename='about.html') }}">About Us</a>
+                <a class="nav-link active" aria-current="page" href="{{url_for('about')}}">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('templates',filename='how.html') }}">How it works</a>
+                <a class="nav-link" href="{{url_for('how')}}">How it works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('templates',filename='menu.html') }}">Products</a>
+                <a class="nav-link" href="{{url_for('menu')}}">Products</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,8 +38,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/foodtrip_company/">Instagram</a></li>
-                  <li><a class="dropdown-item" href="{{ url_for('templates',filename='social.html') }}">Contact Us</a></li>
-                  <li><a class="dropdown-item" href="https://www.amazon.com/Rockn-ROlive-Picual-Extra-Virgin/dp/B08BPJC34S">Amazon</a></li>
+                  <li><a class="dropdown-item" href="{{url_for('social')}}">Contact Us</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="https://www.amazon.com/Rockn-ROlive-Picual-Extra-Virgin/dp/B08BPJC34S">Amazon</a></li>
                 </ul>
               </li>
             </ul>
